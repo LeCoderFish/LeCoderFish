@@ -1,5 +1,5 @@
 
-def algorithm(array,function):
+def algorithm(array):
     i = 0
     while i < len(array):
         if i == 0 or array[i] >= array[i-1]:
@@ -7,5 +7,5 @@ def algorithm(array,function):
         else:
             array[i], array[i-1] = array[i-1], array[i]
             #visualise the sorting
-            function(i-1)
+            yield i,i-1
             i -= 1

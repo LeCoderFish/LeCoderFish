@@ -1,4 +1,4 @@
-def algorithm(array,function):
+def algorithm(array):
         n = len(array)
         gap = n
         swapped = True
@@ -10,6 +10,5 @@ def algorithm(array,function):
             for i in range(n-gap):
                 if  array[i] > array[i+gap]:
                     array[i], array[i+gap] = array[i+gap], array[i]
+                    yield i,i+gap
                     swapped = True
-                    #visualise the sorting
-                    function(i, i+gap)
