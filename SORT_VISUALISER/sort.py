@@ -6,7 +6,6 @@ import algoritms
 
 size = [1000, 500]
 
-
 class PyGameGUI:
     def __init__(self):
         self.screen = pg.display.set_mode((size[0], size[1]))
